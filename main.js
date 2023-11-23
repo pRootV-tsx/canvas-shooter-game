@@ -3,7 +3,7 @@ const scoreEl = document.getElementById("scoreEl")
 const bigScoreEl = document.getElementById("bigScoreEl")
 const startGameBtn = document.getElementById("startGameBtn")
 const modalEl = document.getElementById("modalEl")
-
+const extraMessageEl = document.getElementById("extraMessageEl")
 const sizes = {
 	width: window.innerWidth,
 	height: window.innerHeight,
@@ -233,8 +233,18 @@ function animate() {
 
 		// End Game
 		const dist = Math.hypot(player.x - enemy.x, player.y - enemy.y)
-
 		console.log(score)
+		if (score < 1000) {
+			extraMessageEl.innerHTML =
+				"You are a beginner! Try once more to be a pro! 😅"
+		} else if (score < 3000 && score > 1000) {
+			extraMessageEl.innerHTML =
+				"You are a pro! Try once more to be a master! 😌"
+		} else if (score > 3000) {
+			extraMessageEl.innerHTML =
+				"You are a master! Try once more to be a god! 🤯"
+		}
+
 		if (dist - (enemy.radius + player.radius) < 1) {
 			// convert the player color to red using gsap
 
@@ -287,6 +297,8 @@ function animate() {
 		})
 	})
 }
+
+const factor = 1.2
 window.addEventListener("click", e => {
 	// angles are in raidans (2pi or tau = 360 degrees)
 
@@ -301,8 +313,8 @@ window.addEventListener("click", e => {
 
 	projectiles.push(
 		new Projectile(centerPosition.x, centerPosition.y, 5, "white", {
-			x: velocity.x,
-			y: velocity.y,
+			x: velocity.x * factor,
+			y: velocity.y * factor,
 		})
 	)
 })

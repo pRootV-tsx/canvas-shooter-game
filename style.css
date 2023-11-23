@@ -124,7 +124,7 @@ button:focus-visible {
 .container {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding: 40px;
 	width: 28rem;
 	border-radius: 20px;
 	gap: 0px;
@@ -136,7 +136,7 @@ button:focus-visible {
 
 .container h1 {
 	font-size: 6rem;
-	line-height: 0.8;
+	line-height: 1;
 }
 
 .container p {
