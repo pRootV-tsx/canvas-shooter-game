@@ -14,10 +14,10 @@
 - [x] Simple GSAP animation
 - [x] Make it real time responsive
 - [x] Update on github pages
-- [] Add Speed Controller
-- [] Add Sound
-- [] Add Levels (easy, medium, hard)
-- [] Add High Score
+- [ ] Add Speed Controller
+- [ ] Add Sound
+- [ ] Add Levels (easy, medium, hard)
+- [ ] Add High Score
 
 ## Join and Contribute my project!
 
