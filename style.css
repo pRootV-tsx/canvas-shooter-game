@@ -146,3 +146,18 @@ button:focus-visible {
 .hidden {
 	display: none;
 }
+
+.high-score-container {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	bottom: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.high-score-container a,
+.high-score-container span {
+	margin-inline: 4px;
+	color: #646cff;
+}
