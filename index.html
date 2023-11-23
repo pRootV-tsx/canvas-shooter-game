@@ -8,7 +8,26 @@
 		<title>Vite App</title>
 	</head>
 	<body>
+		<div class="score-board">
+			<span>Score:<span id="scoreEl">0</span>
+		</div>
+
+		<!-- Game over modeal -->
+
+		<div id="modalEl" class="modal-container">
+
+		<div class="container">
+		<h1 id="bigScoreEl">0</h1>
+		<p>Points</p>
+		<div><button id="startGameBtn">Start Game</button></div>
+		</div>
+		
+		</div>
+
 		<canvas id="canvas"></canvas>
+		<div>
+		
+		</div>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
 			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
